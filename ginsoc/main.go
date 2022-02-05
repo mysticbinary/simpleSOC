@@ -1,18 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"ginsoc/router"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	fmt.Println(123)
+	// init DB
+
+	// init gin
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
+	r = router.CollectRoute(r)
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
