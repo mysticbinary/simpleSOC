@@ -33,3 +33,10 @@ npm run build:prod
 ```
 
 # ginsoc
+部署
+```
+go run ./main.go
+```
+
+# vue-element-admin
+用来参考他已有的样式。

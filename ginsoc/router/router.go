@@ -18,6 +18,7 @@ func CollectRoute(r *gin.Engine) *gin.Engine {
 
 	// user
 	r.GET("/api/user/findAll", controller.FindAll)
+	r.POST("/api/user/changePwd", controller.ChangePwd)
 
 	return r
 }
