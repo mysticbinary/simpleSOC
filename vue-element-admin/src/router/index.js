@@ -84,19 +84,6 @@ export const constantRoutes = [
     ]
   },
   {
-    path: '/',
-    component: Layout,
-    redirect: '/table2',
-    children: [
-      {
-        path: 'table2',
-        component: () => import('@/views/table2/index'),
-        name: 'table2',
-        meta: { title: 'table2', icon: 'table', affix: false }
-      }
-    ]
-  },
-  {
     path: '/documentation',
     component: Layout,
     children: [
@@ -104,7 +91,7 @@ export const constantRoutes = [
         path: 'index',
         component: () => import('@/views/documentation/index'),
         name: 'Documentation',
-        meta: { title: 'Documentation', icon: 'documentation', affix: false }
+        meta: { title: 'Documentation', icon: 'documentation', affix: true }
       }
     ]
   },

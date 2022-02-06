@@ -36,15 +36,7 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    proxy: {
-      '/api': {
-        target: process.env.BACKGROUND_APPLICATION_URL,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
-    }
-    // before: require('./mock/mock-server.js')
+    before: require('./mock/mock-server.js')
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that

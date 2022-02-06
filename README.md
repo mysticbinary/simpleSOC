@@ -5,7 +5,7 @@
 
 
 
-# vue-element-admin 
+# foresoc 
 
 开发
 ```
@@ -32,4 +32,4 @@ npm run build:stage
 npm run build:prod
 ```
 
-# Gin
+# ginsoc
