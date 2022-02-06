@@ -77,6 +77,32 @@ export const constantRoutes = [
       }
     ]
   },
+  // {
+  //   path: '/',
+  //   component: Layout,
+  //   redirect: '/servers',
+  //   children: [
+  //     {
+  //       path: 'list',
+  //       component: () => import('@/views/servers/list'),
+  //       name: 'servers',
+  //       meta: { title: 'servers', icon: 'table', affix: false }
+  //     }
+  //   ]
+  // },
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/servers2',
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/servers2/list2'),
+        name: 'servers2',
+        meta: { title: 'servers2', icon: 'table', affix: false }
+      }
+    ]
+  },
   {
     path: '/',
     component: Layout,
@@ -84,7 +110,7 @@ export const constantRoutes = [
     children: [
       {
         path: 'table2',
-        component: () => import('@/views/table2/index'),
+        component: () => import('@/views/table2/table2'),
         name: 'table2',
         meta: { title: 'table2', icon: 'table', affix: false }
       }
