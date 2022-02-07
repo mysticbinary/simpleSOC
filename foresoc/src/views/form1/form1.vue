@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .form1-container {
-
+ padding: 30px;
   margin: 20px;
   border: 1px solid #c8c8c8;
 }
