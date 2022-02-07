@@ -115,6 +115,19 @@ export const constantRoutes = [
         meta: { title: 'table2', icon: 'table', affix: false }
       }
     ]
+  },
+  {
+    path: '/',
+    component: Layout,
+    redirect: '/form1',
+    children: [
+      {
+        path: 'form1',
+        component: () => import('@/views/form1/form1'),
+        name: 'form1',
+        meta: { title: 'form1', icon: 'table', affix: false }
+      }
+    ]
   }
 ]
 

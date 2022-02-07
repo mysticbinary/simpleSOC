@@ -6,7 +6,7 @@
 
 
 # foresoc 
-参考vue-element-admin完成的前端样式。
+参考vue-element-admin 、 element UI 来完成的前端样式。
 
 开发、调试：
 ```
