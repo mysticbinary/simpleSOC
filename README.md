@@ -2,12 +2,13 @@
 一个简单且小型的SOC（安全运营中心）程序，包含了前后端，可以帮助一些小型安全团队快速搭建SOC平台。
 
 运行效果图：
-
+![avatar](./image/simpleSoc.png)
 
 
 # foresoc 
+参考vue-element-admin完成的前端样式。
 
-开发
+开发、调试：
 ```
 # 进入项目目录
 cd vue-element-admin
@@ -23,7 +24,7 @@ npm run dev
 //浏览器访问 http://localhost:9527
 ```
 
-部署
+部署：
 ```
 # 构建测试环境
 npm run build:stage
@@ -33,10 +34,10 @@ npm run build:prod
 ```
 
 # ginsoc
-部署
+使用Gin封装的后端服务，主要是提供API接口。
+
+开发、调试：
 ```
 go run ./main.go
 ```
 
-# vue-element-admin
-用来参考他已有的样式。

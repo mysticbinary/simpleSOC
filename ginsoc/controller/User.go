@@ -3,16 +3,30 @@ package controller
 import (
 	"fmt"
 	"ginsoc/models"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
 
+type Tab struct {
+	Id   int    `json:"id"`
+	Name string `json:"name"`
+}
+
 func FindAll(ctx *gin.Context) {
-	data := models.User{
-		Id:      1,
-		Name:    "张三",
-		Section: "security",
-		Role:    "admin",
+	inTab := []models.User{}
+	for i := 0; i < 6; i++ {
+		tab := models.User{}
+		tab.Id = i
+		tab.Name = "name" + strconv.Itoa(i)
+		tab.Role = "admin"
+		tab.Section = "security"
+
+		inTab = append(inTab, tab)
+	}
+	data := gin.H{
+		"code": 20000,
+		"data": inTab,
 	}
 	ctx.JSON(200, data)
 }
